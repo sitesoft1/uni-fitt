@@ -107,7 +107,11 @@
                 <? } ?>
                 <div class="col-md-2 vertical-text-align-price">
                     <?php if ($product['price']) { ?>
-                        <p class="price"> <?php echo $product['price']; ?></p>
+                        <?php if (!$product['special']) { ?>
+                            <p class="price"> <?php echo $product['price']; ?></p>
+                        <?php }else{ ?>
+                            <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                        <?php } ?>
                     <?php } ?>
                 </div>
                 <div class="col-md-3">
