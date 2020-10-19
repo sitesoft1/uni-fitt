@@ -17,15 +17,9 @@
     <div id="product-category" class="content-center">
      <?php echo $content_top; ?>
       <h1 class="heading-title"><?php echo $heading_title; ?></h1>
-    
-        <?php if ($thumb) { ?>
-            <div class="thumbs uni-thumbs"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>
-        <?php } ?>
-      
       <?php if ($thumb || $description) { ?>
-      <div class="thumb-description-block">
-          <?php if ($thumb) { ?>
-            <!--<div class="thumbs"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>-->
+      <div class="thumb-description-block">  <?php if ($thumb) { ?>
+        <div class="thumbs"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>
            <?php } ?>
          <?php if ($description) { ?>
         <div class="description"><?php echo $description; ?></div>
@@ -39,7 +33,7 @@
             <li>
                 <a style="min-height: 100%;" href="<?php echo $category['href']; ?>">
                     <?php if ($category['thumb']) { ?>
-                        <div style="margin-bottom: 8px;" class="thumbs"><img style="border: 0;" src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" title="<?php echo $category['name']; ?>" class="img-thumbnail" /></div>
+                        <div style="margin-bottom: 8px;" class="thumbs"><img style="border: 0;" src="<?php echo $category['thumb']; ?>" alt="<?php //echo $category['name']; ?>" title="<?php //echo $category['name']; ?>" class="img-thumbnail" /></div>
                     <?php } ?>
                     <?php echo $category['name']; ?>
                 </a>

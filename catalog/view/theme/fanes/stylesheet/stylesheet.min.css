@@ -89,6 +89,11 @@
 	color: #222830;
 }
 
+.uni-thumbs{
+	text-align: center;
+	margin-bottom: 12px;
+}
+
 /*
 .h_product-wrapp > :last-child{
 	border-bottom: 1px solid #e5e5e5;
