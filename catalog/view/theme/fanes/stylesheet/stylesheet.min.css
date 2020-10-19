@@ -37,10 +37,14 @@
 	padding-top: 24px;
 	text-align: center;
 }
+.vertical-text-align-price{
+	padding-top: 23px;
+	text-align: center;
+}
 
 .row {
 	/* margin-right: -15px; */
-	margin-left: 0;
+	margin-left: 10px;
 	border-bottom: 1px solid #e5e5e5;
 	border-left: 1px solid #e5e5e5;
 	border-right: 1px solid #e5e5e5;
@@ -64,8 +68,8 @@
 
 .my_button-add{
 	text-align: right;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .prod_table{

@@ -102,8 +102,10 @@
                 <div class="col-md-5">
                     <h4 class="product-name product-name-align"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
                 </div>
-                <div class="col-md-2 vertical-text-align">604G1418</div>
-                <div class="col-md-2 vertical-text-align">
+                <? if(!empty($product['model'])){ ?>
+                    <div class="col-md-2 vertical-text-align"><?php echo $product['model']; ?></div>
+                <? } ?>
+                <div class="col-md-2 vertical-text-align-price">
                     <?php if ($product['price']) { ?>
                         <p class="price"> <?php echo $product['price']; ?></p>
                     <?php } ?>
