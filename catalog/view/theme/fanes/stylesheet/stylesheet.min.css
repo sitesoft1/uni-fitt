@@ -72,6 +72,19 @@
 
 }
 
+.price{
+	font-size: 18px;
+	color: #4CAF50;
+	font-weight: bold;
+}
+
+.product-name > a{
+	font-family: "Oswald",sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #222830;
+}
+
 /*
 .h_product-wrapp > :last-child{
 	border-bottom: 1px solid #e5e5e5;

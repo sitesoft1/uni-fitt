@@ -105,7 +105,7 @@
                 <div class="col-md-2 vertical-text-align">604G1418</div>
                 <div class="col-md-2 vertical-text-align">
                     <?php if ($product['price']) { ?>
-                        <?php echo $product['price']; ?>
+                        <p class="price"> <?php echo $product['price']; ?></p>
                     <?php } ?>
                 </div>
                 <div class="col-md-3">
